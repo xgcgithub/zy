@@ -1163,7 +1163,7 @@
         {
           "name": "电视台",
           "urls": [
-            "proxy://do=live&type=txt&ext=http://127.0.0.1:9978/api/v1/file/drpy_dzlive/lives/电视台.txt"
+            "proxy://do=live&type=txt&ext=./lives/电视台.txt"
           ]
         },
         {
