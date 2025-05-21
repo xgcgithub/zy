@@ -1,8 +1,8 @@
 {
-  "wallpaper": "https://tuapi.eees.cc/api.php?category=fengjing&type=302",
-  "homepage": "https://github.com/hjdhnx/hipy-server",
-  "sites": [
-    {
+ "sites": {
+   "default":1,
+   "data":[
+ {
       "key": "hipy_js_360影视[官]",
       "name": "360影视[官](drpy_t3)",
       "type": 3,
@@ -1036,155 +1036,57 @@
       "order_num": 93,
       "ext": "./drpy_js/麻雀视频.js"
     }
-  ],
-  "parses": [
-    {
-      "name": "777",
-      "url": "https://jx.777jiexi.com/player/?url=",
-      "type": 0,
-      "ext": {
-        "flag": [
-          "qiyi",
-          "imgo",
-          "爱奇艺",
-          "奇艺",
-          "qq",
-          "qq 预告及花絮",
-          "腾讯",
-          "youku",
-          "优酷",
-          "pptv",
-          "PPTV",
-          "letv",
-          "乐视",
-          "leshi",
-          "mgtv",
-          "芒果",
-          "sohu",
-          "xigua",
-          "fun",
-          "风行"
-        ]
-      },
-      "header": {
-        "User-Agent": "Mozilla/5.0"
-      }
-    },
-    {
-      "name": "8090g",
-      "url": "https://www.8090g.cn/jiexi/?url=",
-      "type": 0,
-      "ext": {
-        "flag": [
-          "qiyi",
-          "imgo",
-          "爱奇艺",
-          "奇艺",
-          "qq",
-          "qq 预告及花絮",
-          "腾讯",
-          "youku",
-          "优酷",
-          "pptv",
-          "PPTV",
-          "letv",
-          "乐视",
-          "leshi",
-          "mgtv",
-          "芒果",
-          "sohu",
-          "xigua",
-          "fun",
-          "风行"
-        ]
-      },
-      "header": {
-        "User-Agent": "Mozilla/5.0"
-      }
-    },
-    {
-      "name": "红狐",
-      "url": "https://player.mrgaocloud.com/player/?url=",
-      "type": 0,
-      "ext": {
-        "flag": [
-          "qiyi",
-          "imgo",
-          "爱奇艺",
-          "奇艺",
-          "qq",
-          "qq 预告及花絮",
-          "腾讯",
-          "youku",
-          "优酷",
-          "pptv",
-          "PPTV",
-          "letv",
-          "乐视",
-          "leshi",
-          "mgtv",
-          "芒果",
-          "sohu",
-          "xigua",
-          "fun",
-          "风行"
-        ]
-      },
-      "header": {
-        "User-Agent": "Mozilla/5.0"
-      }
-    }
-  ],
-  "flags": [
-    "imgo",
-    "youku",
-    "qq",
-    "qq 预告及花絮",
-    "iqiyi",
-    "qiyi",
-    "fun",
-    "letv",
-    "leshi",
-    "sohu",
-    "tudou",
-    "xigua",
-    "cntv",
-    "1905",
-    "pptv",
-    "mgtv",
-    "wasu",
-    "bilibili",
-    "renrenmi"
-  ],
-  "lives": [
-    {
-      "group": "redirect",
-      "channels": [
-        {
-          "name": "电视台",
-          "urls": [
-            "proxy://do=live&type=txt&ext=./lives/电视台.txt"
-          ]
-        },
-        {
-          "name": "杭州华数",
-          "urls": [
-            "proxy://do=live&type=txt&ext=http://127.0.0.1:9978/api/v1/file/drpy_dzlive/lives/杭州华数.m3u"
-          ]
-        },
-        {
-          "name": "云星日记直播",
-          "urls": [
-            "proxy://do=live&type=txt&ext=http://itvbox.cc/云星日记/Ipv4.txt"
-          ]
-        },
-        {
-          "name": "本地嗅探器直播",
-          "urls": [
-            "proxy://do=live&type=txt&ext=http://127.0.0.1:5708/ysp"
-          ]
-        }
-      ]
-    }
-  ]
+]},
+"iptv":  {
+  "default":1,
+   "data":[
+ {
+    "name": "电视台",
+    "url": "./lives/电视台.txt",
+    "epg": "http://epg.112114.xyz",
+    "isActive": true,
+    "id": 1
+  }
+]},
+"analyzes":  {"default":1,
+   "data":
+[
+  {
+    "name": "777",
+    "url": "https://jx.777jiexi.com/player/?url=",
+    "isActive": true,
+    "id": 1
+  },
+  {
+    "name": "虾米",
+    "url": "https://jx.xmflv.com/?url=",
+    "isActive": true,
+    "id": 2
+  },
+  {
+    "name": "json",
+    "url": "https://jx.bozrc.com:4433/player/?url=",
+    "isActive": true,
+    "id": 3
+  },
+  {
+    "name": "诺讯",
+    "url": "https://www.nxflv.com/?url=",
+    "isActive": true,
+    "id": 4
+  },
+  {
+    "name": "夜幕",
+    "url": "https://www.yemu.xyz/?url=",
+    "isActive": true,
+    "id": 5
+  },
+  {
+    "name": "战狼",
+    "url": "https://jx.zhanlangbu.com/?url=",
+    "isActive": true,
+    "id": 6
+  }
+]
+}
 }
